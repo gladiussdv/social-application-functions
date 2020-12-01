@@ -6,7 +6,9 @@
     "shell": "firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "lint": "eslint --fix --ext .js,.jsx .",
+    "build": ""
   },
   "engines": {
     "node": "12"
@@ -18,10 +20,17 @@
     "express": "^4.17.1",
     "firebase": "^8.1.1",
     "firebase-admin": "^9.2.0",
-    "firebase-functions": "^3.11.0"
+    "firebase-functions": "^3.11.0",
+    "uuidv4": "^6.2.5"
   },
   "devDependencies": {
-    "firebase-functions-test": "^0.2.0"
+    "eslint": "^7.14.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "firebase-functions-test": "^0.2.0",
+    "lint": "^0.7.0"
   },
   "private": true
 }
